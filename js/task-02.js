@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const ulEl = document.createElement("ingredients")
+const ulEl = document.querySelector('#ingredients')
 
 for (const ingredient of ingredients) {
   const liEl = document.createElement("li");

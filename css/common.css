@@ -12,6 +12,12 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+.gallery {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 input {
   padding: 8px;
