@@ -12,8 +12,9 @@ function onSubmit(evt){
       const data = {
         email: email.value,
         password: password.value
-    }  
+    } 
+    console.log(data); 
     }
-    console.log(data);
+    
     evt.currentTarget.reset()
 }
