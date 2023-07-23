@@ -9,10 +9,21 @@ const ingredients = [
 
 const ulEl = document.querySelector('#ingredients')
 
-for (const ingredient of ingredients) {
-  const liEl = document.createElement("li");
+// for (const ingredient of ingredients) {
+//   const liEl = document.createElement("li");
+//   liEl.classList.add("item")
+//   liEl.textContent = ingredient;
+//   ulEl.appendChild(liEl)
+// }
+// document.body.appendChild(ulEl);
+
+function createMarkup(ingredients){
+  const items = ingredients.map((ingredient) => {
+    const liEl = document.createElement("li");
   liEl.classList.add("item")
   liEl.textContent = ingredient;
-  ulEl.appendChild(liEl)
+     return liEl;
+  })
+  ulEl.append(...items);
 }
-document.body.appendChild(ulEl);
+createMarkup(ingredients);
