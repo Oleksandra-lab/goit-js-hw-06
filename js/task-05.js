@@ -3,7 +3,12 @@ const helloUser = document.querySelector("#name-output");
 // console.log(userName);
 
 userName.addEventListener("input", (evt) => {
-  helloUser.textContent = evt.currentTarget.value;  
+  if(evt.currentTarget.value === ""){
+    helloUser.textContent = "Anonymous"
+  }else {
+    helloUser.textContent = evt.currentTarget.value;
+  }
+    
 });
 
 // function onInput(evt){
